@@ -1,0 +1,30 @@
+/*Hero Section*/
+
+.hero{
+  height:95vh;
+  width:101%;
+  background-image: url("src/assets/SocialMideaL.png");
+  background-size: cover;
+  background-position: center;
+  margin-left: -3px;
+  margin-top: 40px;
+  scroll-margin-top: 200px;
+
+
+}
+
+
+.overlay {
+  background: rgba(24, 24, 36, 0.81);
+  height: 100%;
+  width: 100%;
+  margin-top: 35px;
+  
+}
+
+/* Destaque na frase */
+.highlight {
+  color: #3942c1;
+  font-weight: bold;
+}
+

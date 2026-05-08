@@ -1,0 +1,51 @@
+.services-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.7rem;
+  scroll-margin-top: 100px;
+  margin-top: 5%;
+}
+
+.services-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 65px;
+  height: 4px;
+  background: #0d6efd;
+  border-radius: 2px;
+}
+
+.service-card {
+  background: #e2e3e5;
+  padding: 22px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 190px;
+}
+
+.service-card h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #6c757d;
+}
+
+/* Hover moderno */
+.service-card:hover {
+  background: #0d6efd;
+  color: white;
+  transform: translateY(-8px);
+}
+
+.service-card:hover p {
+  color: #e0e0e0;
+}
