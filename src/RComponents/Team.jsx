@@ -52,7 +52,7 @@ function Team() {
       id: 8,    
       name: "Maria Gonga",
       role: "Secretaria Geral",
-      image: "path/to/maria.jpeg"
+      image: "src/assets/PIMaria.jpeg"
     },
     
     {
