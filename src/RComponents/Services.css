@@ -1,9 +1,12 @@
+﻿.services-section {
+  scroll-margin-top: 100px;
+}
+
 .services-title {
   position: relative;
   display: inline-block;
-  padding-bottom: 0.7rem;
-  scroll-margin-top: 100px;
-  margin-top: 5%;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .services-title::after {
@@ -12,40 +15,76 @@
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  width: 65px;
+  width: 72px;
   height: 4px;
   background: #0d6efd;
-  border-radius: 2px;
+  border-radius: 999px;
+}
+
+.services-subtitle {
+  max-width: 680px;
+  color: #6c757d;
+  font-size: 1rem;
+  line-height: 1.8;
 }
 
 .service-card {
-  background: #e2e3e5;
-  padding: 22px;
-  border-radius: 15px;
-  transition: all 0.3s ease;
-  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(13, 110, 253, 0.12);
+  border-radius: 24px;
+  padding: 2rem;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 190px;
+  justify-content: flex-start;
+  height: 100%;
+  min-height: 230px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.service-card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  background: rgba(13, 110, 253, 0.1);
+}
+
+.service-card-icon i {
+  font-size: 1.35rem;
+  color: #0d6efd;
 }
 
 .service-card h4 {
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
 }
 
 .service-card p {
-  color: #6c757d;
+  color: #495057;
+  line-height: 1.7;
+  margin-bottom: 0;
 }
 
-/* Hover moderno */
 .service-card:hover {
-  background: #0d6efd;
-  color: white;
-  transform: translateY(-8px);
+  transform: translateY(-12px);
+  box-shadow: 0 28px 50px rgba(13, 110, 253, 0.18);
+  background: linear-gradient(135deg, #0d6efd 0%, #5c7dff 100%);
+  color: #ffffff;
+}
+
+.service-card:hover .service-card-icon {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.service-card:hover .service-card-icon i {
+  color: #ffffff;
 }
 
 .service-card:hover p {
-  color: #e0e0e0;
+  color: rgba(255, 255, 255, 0.92);
 }
