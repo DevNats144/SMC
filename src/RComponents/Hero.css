@@ -3,7 +3,7 @@
 .hero{
   height:95vh;
   width:101%;
-  background-image: url("src/assets/SocialMideaL.png");
+  background-image: url("../assets/SocialMideaL.png");
   background-size: cover;
   background-position: center;
   margin-left: -3px;

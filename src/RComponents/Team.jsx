@@ -4,62 +4,72 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import "./Team.css";
 
+import PIEduardo from "../assets/PIEduardo.jpeg";
+import PILaurindo from "../assets/PILaurindo.jpeg";
+import PIMaurooo from "../assets/PIMaurooo.jpeg";
+import PIMarcio from "../assets/PIMarcio.jpeg";
+import PIJéssica from "../assets/PIJéssica.jpeg";
+import PIMadalena from "../assets/PIMadalena.jpeg";
+import PIDeniusa from "../assets/PIDeniusa.jpeg";
+import PIMaria from "../assets/PIMaria.jpeg";
+import PINats from "../assets/PINats.jpeg";
+
 function Team() {
   const teamMembers = [
     {
       id: 1,
       name: "Eduardo Joaquim",
       role: "Copywriter",
-      image: "src/assets/PIEduardo.jpeg"
+      image: PIEduardo
     },
     {
       id: 2,
       name: "Laurindo Borges",
       role: "Gestor de Marketing",
-      image: "src/assets/PILaurindo.jpeg"
+      image: PILaurindo
   },
     {
       id: 3,
       name: "Mauro Domingos",
       role: "Supervisionador   de Resultados criativos ",
-      image: "src/assets/PIMaurooo.jpeg"
+      image: PIMaurooo
     },
       {
       name:"Márcio Cunha",
       role: "Filmaker",
-      image: "src/assets/PIMarcio.jpeg"
+      image: PIMarcio
     },
   
     {
       id: 5,
       name: "Jéssica Herbelinda",
       role: "Host",
-      image: "src/assets/PIJéssica.jpeg"
+      image: PIJéssica
     },
     {
       id: 6,
       name: "Madalena Muhongo",
       role: "Assistente Administrativa e Host",
-      image: "src/assets/PIMadalena.jpeg"
+      image: PIMadalena
     },
     {
       id: 7,
       name: "Deniusa Angelino",
       role: "Profissional de Comunicação e imagem",
-      image: "src/assets/PIDeniusa.jpeg"
+      image: PIDeniusa
     },
     {
       id: 8,    
       name: "Maria Gonga",
       role: "Secretaria Geral",
-      image: "src/assets/PIMaria.jpeg"
+      image: PIMaria
     },
     
     {
       id: 10,
       name: "Nataniel Gomes",
       role: "Desenvolvedor de Sistemas",
-      image: "src/assets/PINats.jpeg"
+      image: PINats
     }
   ];
 
