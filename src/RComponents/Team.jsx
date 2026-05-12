@@ -8,7 +8,7 @@ import PIEduardo from "../assets/PIEduardo.jpeg";
 import PILaurindo from "../assets/PILaurindo.jpeg";
 import PIMaurooo from "../assets/PIMaurooo.jpeg";
 import PIMarcio from "../assets/PIMarcio.jpeg";
-import PIJéssica from "../assets/PIJéssica.jpeg";
+import PIJéssica from "../assets/PiJéssica.jpeg";
 import PIMadalena from "../assets/PIMadalena.jpeg";
 import PIDeniusa from "../assets/PIDeniusa.jpeg";
 import PIMaria from "../assets/PIMaria.jpeg";
