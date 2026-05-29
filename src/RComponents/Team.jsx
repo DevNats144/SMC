@@ -68,7 +68,7 @@ function Team() {
     {
       id: 10,
       name: "Nataniel Gomes",
-      role: "Desenvolvedor de Sistemas",
+      role: "Desenvolvedor de Software",
       image: PINats
     }
   ];
