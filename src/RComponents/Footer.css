@@ -1,11 +1,13 @@
 .footer {
+  position: relative;
+  overflow: hidden;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   margin-top: auto;
   margin-bottom: -5%;
   background: url(../assets/SociaIimg1.jpg);
-  background-size:cover ;
+  background-size: cover;
   background-position: center;
   color: white;
   padding: 30px;
@@ -15,6 +17,21 @@
 .footer h2 {
   margin-top: 10px;
   margin-bottom: 20px;
+}
+
+/* overlay escuro para reduzir brilho e dar tom profissional */
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(24, 24, 36, 0.78);
+  z-index: 0;
+}
+
+/* garantir que o conteúdo fique acima do overlay */
+.footer > * {
+  position: relative;
+  z-index: 1;
 }
 
 .contact-buttons {
