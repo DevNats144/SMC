@@ -5,7 +5,7 @@
   margin-top: auto;
   margin-bottom: -5%;
   background: url(../assets/SociaIimg1.jpg);
-  background: rgba(54, 54, 95, 0.81);
+  background-size:cover ;
   color: white;
   padding: 30px;
   border-radius: 1px;
