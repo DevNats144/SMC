@@ -54,7 +54,7 @@ function Navegacao(){
               </Navbar.Brand>
               <Navbar.Toggle aria-controls='basic-navbar-nav' onClick={toggleMenu} />
               
-              <Navbar.Collapse id="basic-navbar-nav">
+              <Navbar.Collapse id="navbar-nav">
                   <Nav className='ms-auto'>
                   <Nav.Link href='#home' onClick={closeMenu}>Início</Nav.Link>  
                   <Nav.Link href='#servicos' onClick={closeMenu}>Serviços</Nav.Link> 

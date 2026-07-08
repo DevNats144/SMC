@@ -17,6 +17,7 @@ function App(){
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Navegacao />
       <Hero />
+      <div id="about-panel-root" />
       <Servos />
       <CarouselFade />
       <Divider />

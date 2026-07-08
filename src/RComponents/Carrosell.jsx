@@ -12,11 +12,15 @@ import logo4 from "../assets/Socialimg11.png";
 function CarouselFade() {
   return (
     <>
-   <h1 style={{ width: "calc(100% + 10%)", marginLeft: "-10%", marginBottom: "18px", color: "white", margin: "10px 0 18px 0", backgroundColor: "#3038a8", borderRadius: "0", padding: "10px", fontSize: "30px", fontWeight: "bold", textAlign: "center", boxSizing: "border-box" }}>
+   <h1 style={{ width: "100%", height: "50px", margin: "10px 0 20px", color: "white", backgroundColor: "#54588e", padding: "10px", fontSize: "26px", fontWeight: "bold", textAlign: "center" }}>
      Portfólio Social Midea
    </h1>
+
+
+
    
-    <div style={{ width: "90%", marginLeft: "5%", marginRight: "5%", marginBottom: "0px", padding: "0" }}>
+   
+    <div style={{ width: "100%", maxWidth: "960px", margin: "0 auto", marginBottom: "0", padding: "0" }}>
         <Carousel fade>
         <Carousel.Item style={{display:'flex'}}>
             <img

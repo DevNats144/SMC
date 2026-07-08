@@ -1,22 +1,25 @@
-*{
-
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   overflow-x: hidden;
 }
 
-  #root {
+#root {
   text-align: center;
-  margin: 3px;
+  margin: 0;
+  min-height: 100vh;
 }
 
 /*Nav Bar Section*/
 .navbar {
   background-color: #000000f4 !important;
-  height:85px;
+  height:75px;
   margin-top: 0px;
   margin-bottom: 100px;
 }
@@ -29,7 +32,7 @@ html, body {
 
 .navbar .navbar-brand{
    font-size:26.5px;
-   margin-left:-30px;
+   margin-left: 0;
 }
 
 .navbar .nav-link {

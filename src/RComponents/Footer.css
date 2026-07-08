@@ -1,17 +1,16 @@
 .footer {
   position: relative;
   overflow: hidden;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  width: 100%;
+  margin: 0 auto;
   margin-top: auto;
   margin-bottom: -5%;
-  background: #181824 url(../assets/SociaIimg1.jpg) no-repeat center center;
+  background: #090914 url(../assets/SociaIimg1.jpg) no-repeat center center;
   background-size: contain;
   color: white;
-  padding: 40px 30px;
-  min-height: 420px;
-  border-radius: 1px;
+  padding: 40px 15px;
+  min-height: 380px;
+  border-radius: 20px;
 }
 
 .footer h2 {
@@ -24,7 +23,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(24, 24, 36, 0.78);
+  background: rgba(27, 27, 35, 0.932);
   z-index: 0;
 }
 

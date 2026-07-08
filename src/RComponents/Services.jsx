@@ -7,35 +7,35 @@ const services = [
   {
     icon: "bi bi-bar-chart-line",
     title: "Marketing Digital",
-    description: "Estratégias inteligentes para ampliar sua presença online e gerar resultados reais.",
+    description: "Estratégias inteligentes para ampliar sua presença online e gerar resultados",
   },
   {
     icon: "bi bi-award",
     title: "Promoção de Marcas",
-    description: "Fortalecemos sua identidade visual e construímos reconhecimento da marca.",
+    description: "Fortalecemos sua identidade visual e construímos reconhecimento da marca",
   },
   {
     icon: "bi bi-people",
     title: "Gestão de Mídias Sociais",
-    description: "Transformamos seguidores em clientes por meio de conteúdo relevante e engajador.",
+    description: "Transformamos seguidores em clientes por meio de conteúdo relevante e engajador",
   },
   {
     icon: "bi bi-laptop",
     title: "Página Web",
-    description: "Criação e manutenção de sites profissionais para sua empresa se destacar online.",
+    description: "Criação e manutenção de sites profissionais para sua empresa se destacar online",
   },
   {
     icon: "bi bi-currency-dollar",
     title: "Tráfego Pago",
-    description: "Campanhas otimizadas para alcançar o público certo com o melhor retorno possível.",
+    description: "Campanhas otimizadas para alcançar o público certo com o melhor retorno possível",
   },
 ];
 
 function Services() {
   return (
-    <Container className="services-section py-5">
+    <Container id="servicos" className="services-section py-5">
       <div className="text-center mb-5">
-        <h1 id="servicos" className="services-title fw-bold">
+        <h1  className="services-title fw-bold">
           Nossos Serviços
         </h1>
         <p className="services-subtitle mx-auto mt-3">

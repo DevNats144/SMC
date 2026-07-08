@@ -1,10 +1,10 @@
 # Social Midea Company - Official Website
 
-## Descrição
+# Descrição
 
 Website profissional da Social Midea Company, desenvolvido com tecnologias modernas e responsivas. O projeto apresenta informações sobre a empresa, serviços oferecidos, equipe e canais de contato.
 
-## Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 - **React 18** - Biblioteca JavaScript para construção de interfaces
 - **Vite** - Build tool e dev server rápido
@@ -67,10 +67,9 @@ src/
 - **Navbar** - Navegação principal da aplicação
 - **Hero** - Seção de destaque
 - **Services** - Apresentação de serviços
-- **Team** - Apresentação da equipe
-- **Contact** - Formulário de contato
-- **Footer** - Rodapé com informações adicionais
 - **Carrosell** - Componente de carrossel
+- **Team** - Apresentação da equipa
+- **Footer** - Rodapé com informações para contacto
 
 ## Contato
 

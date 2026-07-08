@@ -4,7 +4,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer id="contacto" className="footer">
-      <h1>Contacte-nos</h1>
+      <h1 style={{marginBottom:"10px",}}>Contacte-nos</h1>
 
       <Container className="text-center">
         <div className="contact-buttons">
