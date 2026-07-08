@@ -19,9 +19,14 @@ function CustomToggle({ title = "Sobre nòs", children }) {
     if (!open) return;
 
     const id = setTimeout(() => {
-      if (contentRef.current) {
-        contentRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+      if (!contentRef.current) return;
+
+      const rect = contentRef.current.getBoundingClientRect();
+      const navbarEl = document.querySelector(".navbar");
+      const navbarHeight = navbarEl ? navbarEl.getBoundingClientRect().height : 90;
+      const targetTop = Math.max(0, window.scrollY + rect.top - navbarHeight - 16);
+
+      window.scrollTo({ top: targetTop, behavior: "smooth" });
     }, 50);
 
     return () => clearTimeout(id);

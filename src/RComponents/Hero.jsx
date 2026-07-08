@@ -17,7 +17,7 @@ function Hero() {
           </p>
 
           <CustomToggle title="Sobre nòs">
-            <div className="about-content">
+            <div className="about-content" id="content">
               <p style={{fontWeight: "bold"}}>
                 A Social Midea Company é uma agência criativa especializada em marketing digital, gestão de
                 redes sociais e design gráfico. Transformamos ideias em marcas fortes, conectando
