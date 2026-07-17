@@ -76,7 +76,7 @@ function Team() {
   return (
     <Container className="py-5" id="team">
 
-      <h2 className="team-title text-center mb-5 fw-bold">
+      <h2 strong className="team-title text-center mb-5 fw-bold">
         Nossa Equipa
       </h2>
 

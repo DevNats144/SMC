@@ -1,6 +1,19 @@
  #team { 
-scroll-margin-top: 70px;
+scroll-margin-top: 60px;
+margin-top:-3%;
  } 
+
+ .py-5{
+  background-color: rgb(230, 229, 235);
+  border-radius: 4%;
+  
+ }
+
+ #team h2{
+  font-size:37px;
+  color:rgb(11, 2, 24);
+  
+ }
 
 .team-card {
   position: relative;
@@ -9,7 +22,7 @@ scroll-margin-top: 70px;
   overflow: hidden;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  min-height: 250px;
+  min-height: 210px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -21,12 +34,12 @@ scroll-margin-top: 70px;
 
 .team-card-img {
   width: 100%;
-  max-width: 260px;
-  height: 230px;
-  object-fit: cover;
+  max-width: 265px;
+  height: 222px !important;
+  object-fit:fill;
   object-position: center;
   background-color: #f0f0f0;
-  margin: 1 auto;
+  margin: 0 auto;
   display: block;
 }
 
