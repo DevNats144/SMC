@@ -16,7 +16,7 @@ function Footer() {
           </a>
 
           <a
-            href="https://wa.me/930722855"
+            href="https://wa.me/244930722855?txt=Olá%2C%20%Quero%20%saber%20%mais%20%acerca%20%dos%20%vossos%20%serviços"
             target="_blank"
             rel="noreferrer"
             className="btn-contact whatsapp"
