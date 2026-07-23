@@ -16,7 +16,7 @@ function Footer() {
           </a>
 
           <a
-            href="https://wa.me/244930722855?text=Olá%2C%20%Quero%20%saber%20%mais%20%acerca%20%dos%20%vossos%20%serviços"
+            href="https://wa.me/244930722855?text=Olá%2C20Quero20saber20mais20acerca20dos20vossos20serviços"
             target="_blank"
             rel="noreferrer"
             className="btn-contact whatsapp"
@@ -34,7 +34,7 @@ function Footer() {
           </a>
 
           <a
-            href="tel:244930722855"
+            href="tel:930722855"
             className="btn-contact phone"
           >
             <i className="bi bi-telephone-fill"></i> Telefone
