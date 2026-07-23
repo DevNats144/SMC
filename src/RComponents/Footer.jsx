@@ -9,14 +9,14 @@ function Footer() {
       <Container className="text-center">
         <div className="contact-buttons">
           <a
-            href="mailto:Socialmideacompany@gmail.com?subject=Quero%20saber20%mais&body=Olá,20%gostaria20%de20%saber20%mais20%sobre20%os20%serviços20%da20%empresa."
+            href="mailto:Socialmideacompany@gmail.com?subject=Quero%20saber20%mais&body=Olá%2C%20%gostaria20%de20%saber20%mais20%sobre20%os20%serviços20%da20%empresa."
             className="btn-contact email"
           >
             <i className="bi bi-envelope-fill"></i> Email
           </a>
 
           <a
-            href="https://wa.me/244930722855?txt=Olá%2C%20%Quero%20%saber%20%mais%20%acerca%20%dos%20%vossos%20%serviços"
+            href="https://wa.me/244930722855?text=Olá%2C%20%Quero%20%saber%20%mais%20%acerca%20%dos%20%vossos%20%serviços"
             target="_blank"
             rel="noreferrer"
             className="btn-contact whatsapp"
@@ -34,7 +34,7 @@ function Footer() {
           </a>
 
           <a
-            href="tel:930 722 855"
+            href="tel:244930722855"
             className="btn-contact phone"
           >
             <i className="bi bi-telephone-fill"></i> Telefone

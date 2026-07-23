@@ -7,10 +7,7 @@ import "./Team.css";
 import PIEduardo from "../assets/PIEduardo.jpeg";
 import PILaurindo from "../assets/PILaurindo.jpeg";
 import PIMaurooo from "../assets/PIMaurooo.jpeg";
-import PIMarcio from "../assets/PIMarcio.jpeg";
 import PIJéssica from "../assets/PiJéssica.jpeg";
-import PIMadalena from "../assets/PIMadalena.jpeg";
-import PIDeniusa from "../assets/PIDeniusa.jpeg";
 import PIMaria from "../assets/PIMaria.jpeg";
 import PINats from "../assets/PINats.jpeg";
 
@@ -34,37 +31,14 @@ function Team() {
       role: "Supervisionador   de Resultados criativos ",
       image: PIMaurooo
     },
-      {
-      name:"Márcio Cunha",
-      role: "Filmaker",
-      image: PIMarcio
-    },
-  
+     
     {
       id: 5,
       name: "Jéssica Herbelinda",
       role: "Host",
       image: PIJéssica
     },
-    {
-      id: 6,
-      name: "Madalena Muhongo",
-      role: "Assistente Administrativa e Host",
-      image: PIMadalena
-    },
-    {
-      id: 7,
-      name: "Deniusa Angelino",
-      role: "Profissional de Comunicação e imagem",
-      image: PIDeniusa
-    },
-    {
-      id: 8,    
-      name: "Maria Gonga",
-      role: "Secretaria Geral",
-      image: PIMaria
-    },
-    
+ 
     {
       id: 10,
       name: "Nataniel Gomes",
