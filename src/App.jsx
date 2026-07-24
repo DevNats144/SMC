@@ -1,4 +1,5 @@
 import './Style.css'
+import WhatsButton from './RComponents/WhatsButton';
 import Navegacao from './RComponents/Navbar';
 import Hero from "./RComponents/Hero";
 import Servos from "./RComponents/Services";
@@ -15,6 +16,7 @@ import Footer from './RComponents/Footer';
 function App(){
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      <WhatsButton />
       <Navegacao />
       <Hero />
       <div id="about-panel-root" />
