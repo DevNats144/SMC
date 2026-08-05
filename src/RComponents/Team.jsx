@@ -10,6 +10,7 @@ import PIMaurooo from "../assets/PIMaurooo.jpeg";
 import PIJéssica from "../assets/PiJéssica.jpeg";
 import PIMaria from "../assets/PIMaria.jpeg";
 import PINats from "../assets/PINats.jpeg";
+import PIDeniusa from "../assets/PIDeniusa.jpeg";
 
 function Team() {
   const teamMembers = [
@@ -37,6 +38,13 @@ function Team() {
       name: "Jéssica Herbelinda",
       role: "Host",
       image: PIJéssica
+    },
+
+     {
+      id: 7,
+      name: "Deniusa",
+      role: "Host",
+      image:PIDeniusa
     },
  
     {

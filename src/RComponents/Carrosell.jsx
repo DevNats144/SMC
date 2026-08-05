@@ -2,7 +2,11 @@ import Carousel from 'react-bootstrap/Carousel';
 import logo from '../assets/Socialimg3.png';
 import logo2 from '../assets/Socialimg9.png';
 import logo3 from "../assets/Socialimg10.png";
-import logo4 from "../assets/Socialimg11.png";
+import logo4 from "../assets/Socialimg11.png";   
+// import logo5 from "../assets/Smc P'Bronze.jpg";
+// import logo6 from "../assets/Smc P'Prata.jpg";
+// import logo7 from "../assets/Smc P'Ouro.jpg";
+
 
 
 
@@ -12,7 +16,7 @@ import logo4 from "../assets/Socialimg11.png";
 function CarouselFade() {
   return (
     <>
-   <h1 style={{ width: "100%", height: "50px", margin: "10px 0 20px", color: "white", backgroundColor: "#54588e", padding: "10px", fontSize: "26px", fontWeight: "bold", textAlign: "center" }}>
+   <h1  style={{ width: "100%", height: "50px", margin: "10px 0 20px", color: "white", backgroundColor: "#54588e", padding: "10px", fontSize: "26px", fontWeight: "bold", textAlign: "center" }}>
      Portfólio Social Midea
    </h1>
 
@@ -64,7 +68,36 @@ function CarouselFade() {
     
         </Carousel.Item>
 
-        </Carousel>
+  </Carousel>
+  
+      
+    <div>
+       
+      
+
+
+      
+        {/* <div>
+        <img
+        className=" d-block w-100 p-0 m-0"
+        src={logo6}
+        alt="Sixth Slide"
+        style={{ height: '100%', width: "100%", objectFit: "cover", borderRadius: '15px' }}
+        />
+
+   */}
+
+    {/* <div>
+        <img
+        className=" d-block w-100 p-0 m-0"
+        src={logo7}
+        alt="Sixth Slide"
+        style={{ height: '100%', width: "100%", objectFit: "cover", borderRadius: '15px' }}
+        />
+
+   */}
+
+      </div> 
     </div>
     </>
   );
