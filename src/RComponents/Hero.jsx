@@ -33,7 +33,7 @@ function Hero() {
                   e foco no cliente em todas as etapas do trabalho.
                 </p>
               </div>
-
+    <hr />
               <div className="about-item">
                 <strong>Missão</strong>
                 <p>
@@ -41,7 +41,7 @@ function Hero() {
                   visibilidade e impacto mensurável.
                 </p>
               </div>
-
+   <hr />
               <div className="about-item">
                 <strong>Visão</strong>
                 <p>
