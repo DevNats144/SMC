@@ -3,6 +3,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Services.css";
 
+
+
 const services = [
   {
     icon: "bi bi-bar-chart-line",
@@ -33,15 +35,16 @@ const services = [
 
 function Services() {
   return (
-    <Container id="servicos" className="services-section py-5">
-      <div className="text-center mb-5">
-        <h1  className="services-title fw-bold">
+    <Container id="servicos" className="  services-section py-5">
+      <div className="text-center mb-2">
+        <h1 className="services-title fw-bold text">
           Nossos Serviços
         </h1>
-        <p className="services-subtitle mx-auto mt-3">
+        <p className="services-subtitle mx-auto mt-2">
           Soluções completas de marketing digital e presença online, feitas para impulsionar sua marca
           com confiança e criatividade.
         </p>
+
       </div>
 
       <Row className="g-4 justify-content-center">
