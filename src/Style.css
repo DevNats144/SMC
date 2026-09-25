@@ -31,8 +31,11 @@ html, body {
 }
 
 .navbar .navbar-brand{
-   font-size:26.5px;
-   margin-left: 0;
+  display: inline-flex;
+  align-items: center;
+  font-size:26.5px;
+  margin-left: 0;
+  line-height: 1.1;
 }
 
 .navbar .nav-link {
@@ -48,9 +51,11 @@ transform: translateX(-3px)
 .navbar .navbar-logo {
   width:80px;
   height: auto;
+  display: block;
+  flex-shrink: 0;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   border: 0.px solid #f4f5f6;
   
   
@@ -100,6 +105,7 @@ transform: translateX(-3px)
   .navbar-brand {
     margin-left: 0 !important;
     font-size: 22px !important;
+    line-height: 1.1;
   }
 
   .navbar .navbar-logo {
@@ -121,6 +127,7 @@ transform: translateX(-3px)
 
   .navbar-brand {
     font-size: 18px !important;
+    max-width: calc(100% - 3.75rem);
   }
 
   .navbar .navbar-logo {

@@ -1,0 +1,229 @@
+.team-page {
+  min-height: 100vh;
+  background: #f4f2ed;
+  color: #171719;
+}
+
+.team-page main {
+  padding-top: 75px;
+}
+
+.team-page-intro {
+  background: #171719;
+  color: #f4f2ed;
+  padding: 7rem 0 6rem;
+}
+
+.team-page-intro .container,
+.team-page-grid-section .container,
+.team-page-cta .container {
+  max-width: 1180px;
+}
+
+.team-page-kicker,
+.team-page-section-label {
+  color: #3942c1;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.team-page-heading-row {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.team-page-heading-row h1 {
+  max-width: 760px;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.8rem, 6vw, 5.7rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0.98;
+}
+
+.team-page-heading-row p {
+  max-width: 510px;
+  margin: 2rem 0 0;
+  color: #b8b8b4;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.team-page-count {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 150px;
+  padding-bottom: 0.25rem;
+  border-left: 1px solid #575754;
+  padding-left: 1.25rem;
+}
+
+.team-page-count strong {
+  color: #3942c1;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 3.4rem;
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+.team-page-count span {
+  color: #b8b8b4;
+  font-size: 0.77rem;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.team-page-grid-section {
+  padding: 5rem 0 6rem;
+}
+
+.team-page-section-label {
+  color: #505250;
+  margin-bottom: 2rem;
+}
+
+.team-page-card {
+  height: 100%;
+  background: #fff;
+  border: 1px solid #deddd6;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.team-page-card:hover {
+  box-shadow: 0 18px 36px rgba(23, 23, 25, 0.12);
+  transform: translateY(-6px);
+}
+
+.team-page-image-wrap {
+  position: relative;
+  height: 330px;
+  overflow: hidden;
+  background: #d9d8d0;
+}
+
+.team-page-image-wrap img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.82);
+  transition: transform 350ms ease, filter 350ms ease;
+}
+
+.team-page-card:hover .team-page-image-wrap img {
+  filter: saturate(1);
+  transform: scale(1.04);
+}
+
+.team-page-card-copy {
+  min-height: 104px;
+  padding: 1.25rem 1.4rem 1.35rem;
+}
+
+.team-page-card-copy h2 {
+  margin: 0 0 0.45rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.team-page-card-copy p {
+  margin: 0;
+  color: #6e706b;
+  font-size: 0.86rem;
+}
+
+.team-page-cta {
+  padding: 5rem 0;
+  background: #3942c1;
+  color: #ffffff;
+}
+
+.team-page-cta .container {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.team-page-cta span {
+  color: #cfd2ff;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.team-page-cta h2 {
+  margin: 1rem 0 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.3rem, 4vw, 4.2rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.team-page-cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.team-page-cta-link i {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 767px) {
+  .team-page-intro {
+    padding: 5rem 0 4rem;
+  }
+
+  .team-page-heading-row {
+    display: block;
+  }
+
+  .team-page-heading-row h1 {
+    font-size: clamp(2.75rem, 13vw, 4.6rem);
+  }
+
+  .team-page-heading-row p {
+    margin-top: 1.5rem;
+  }
+
+  .team-page-count {
+    margin-top: 2.5rem;
+  }
+
+  .team-page-grid-section {
+    padding: 3.5rem 0 4rem;
+  }
+
+  .team-page-image-wrap {
+    height: 360px;
+  }
+
+  .team-page-cta .container {
+    display: block;
+  }
+
+  .team-page-cta-link {
+    margin-top: 2rem;
+  }
+}
+
+.team-page-cta-link:hover {
+  color: #cfd2ff;
+}

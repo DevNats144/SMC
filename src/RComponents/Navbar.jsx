@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav'
 import { Navbar } from 'react-bootstrap';
 import { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/SociaIimg1.jpg';
 
 
@@ -42,7 +43,7 @@ function Navegacao(){
   <Navbar  className="navbar" variant="dark" expand="lg" fixed="top" expanded={isOpen}>
          
           <Container>
-              <Navbar.Brand href="#">
+              <Navbar.Brand as={Link} to="/" onClick={closeMenu}>
                 <img
                   src={logo}
                   alt="Logo Social Midea"
@@ -56,10 +57,10 @@ function Navegacao(){
               
               <Navbar.Collapse id="navbar-nav">
                   <Nav className='ms-auto'>
-                  <Nav.Link href='#home' onClick={closeMenu}>Início</Nav.Link>  
-                  <Nav.Link href='#servicos' onClick={closeMenu}>Serviços</Nav.Link> 
-                  <Nav.Link href='#team' onClick={closeMenu}>Equipa</Nav.Link> 
-                  <Nav.Link href='#contacto' onClick={closeMenu}>Contacto</Nav.Link>  
+                  <Nav.Link as={Link} to='/#home' onClick={closeMenu}>Início</Nav.Link>  
+                  <Nav.Link as={Link} to='/#servicos' onClick={closeMenu}>Serviços</Nav.Link> 
+                  <Nav.Link as={Link} to='/equipa' onClick={closeMenu}>Equipa</Nav.Link> 
+                  <Nav.Link as={Link} to='/#contacto' onClick={closeMenu}>Contacto</Nav.Link>  
                   </Nav>    
               </Navbar.Collapse>
           </Container>
