@@ -26,7 +26,7 @@ function Hero() {
 
          <br />
 
-              <div className="about-item">
+              <div className="about-item bg-blue-300 ">
                 <strong>Valores</strong>
                 <p>
                   Criatividade, inovação, profissionalismo e transparência. Comprometemo-nos com resultados
