@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './Style.css'
 import WhatsButton from './RComponents/WhatsButton';
 import Navegacao from './RComponents/Navbar';
