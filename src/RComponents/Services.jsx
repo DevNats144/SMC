@@ -1,6 +1,6 @@
 ﻿import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import Reveal from "./Reveal";
 import "./Services.css";
 
 
@@ -49,7 +49,10 @@ function Services() {
 
       <Row className="g-4 justify-content-center">
         {services.map((service) => (
-          <Col key={service.title} lg={3} md={6} xs={12} className="d-flex align-items-stretch">
+          <Reveal
+            key={service.title}
+            className="col-lg-3 col-md-6 col-12 d-flex align-items-stretch"
+          >
             <div className="service-card">
               <div className="service-card-icon">
                 <i className={service.icon} aria-hidden="true" />
@@ -57,7 +60,7 @@ function Services() {
               <h4>{service.title}</h4>
               <p>{service.description}</p>
             </div>
-          </Col>
+          </Reveal>
         ))}
       </Row>
     </Container>
