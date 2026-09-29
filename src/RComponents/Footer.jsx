@@ -15,6 +15,8 @@ function Footer() {
             <i className="bi bi-envelope-fill"></i> Email
           </a>
 
+          
+
           <a
             href="https://wa.me/244930722855?text=Olá%2C%20Quero%20saber%20mais%20acerca%20dos%20vossos%20serviços%E2%80%8B"
             target="_blank"

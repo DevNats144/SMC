@@ -26,6 +26,8 @@ const teamMembers = [
 
 function TeamPage() {
   return (
+
+  <Reveal>   
     <div className="team-page">
       <WhatsButton />
       <main>
@@ -83,6 +85,7 @@ function TeamPage() {
       </main>
       <Footer />
     </div>
+     </ Reveal> 
   );
 }
 

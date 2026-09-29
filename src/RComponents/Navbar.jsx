@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/SociaIimg1.jpg';
 
 
-function Navegacao(){
+function NavBar(){
 
   const [isOpen, setIsOpen] = useState(false);
   const navbarRef = useRef(null);
@@ -73,4 +73,4 @@ function Navegacao(){
 
 }
 
-export default Navegacao; 
+export default NavBar; 
