@@ -8,8 +8,7 @@ import CarouselFade from './RComponents/Carrosell';
 import Divider from './RComponents/Divider';
 import Footer from './RComponents/Footer';
 import TeamPage from './pages/TeamPage';
-
-
+import Reveal from './RComponents/Reveal';
 
 
 

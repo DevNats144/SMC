@@ -18,7 +18,7 @@ useEffect(() => {
    }
 )
 
-observer.observer(element)
+observer.observe(element)
     return () =>  observer.disconnect ()}, []) 
 
 

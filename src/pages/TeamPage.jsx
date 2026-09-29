@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 import Footer from "../RComponents/Footer";
 import WhatsButton from "../RComponents/WhatsButton";
+import Reveal from '../RComponents/Reveal';
 import "./TeamPage.css";
 
 import PIEduardo from "../assets/PIEduardo.jpeg";
@@ -85,7 +86,7 @@ function TeamPage() {
       </main>
       <Footer />
     </div>
-     </ Reveal> 
+  </Reveal>
   );
 }
 
