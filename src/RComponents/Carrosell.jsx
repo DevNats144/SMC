@@ -17,7 +17,7 @@ function CarouselFade() {
   return (
     <>
    <h1  style={{ width: "100%", height: "50px", margin: "10px 0 20px", color: "white", backgroundColor: "#54588e", padding: "10px", fontSize: "26px", fontWeight: "bold", textAlign: "center" }}>
-     Portfólio Social Midea
+     Parcerias SMC
    </h1>
 
 
