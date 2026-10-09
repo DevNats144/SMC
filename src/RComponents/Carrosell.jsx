@@ -67,7 +67,7 @@ const projects = [
     alt: 'Apresentação dos serviços de tratamento de água da Aqualink',
   },
   {
-    name: 'Skyfly Transitários',
+    name: 'Campanha Giráfrica',
     category: 'Logística e transporte internacional',
     image: skyfly,
     alt: 'Peça de divulgação dos parceiros globais da Skyfly Transitários',
@@ -80,7 +80,7 @@ function CarouselFade() {
       <div className="work-inner">
         <header className="work-header">
           <div>
-            <p className="work-eyebrow">Portefólio SMC</p>
+            <p className="work-eyebrow">PARCERIAS SMC</p>
             <h2 id="work-title">Trabalho que dá nas vistas.</h2>
             <p className="work-intro">
               Uma seleção de marcas e projetos que ganharam forma com a nossa equipa.
