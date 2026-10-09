@@ -86,7 +86,7 @@ function TeamPage() {
       </main>
       <Footer />
     </div>
-  </Reveal>
+  </Reveal>  
   );
 }
 
