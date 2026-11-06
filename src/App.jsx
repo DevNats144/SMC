@@ -14,8 +14,6 @@ import TeamPage from './pages/TeamPage';
 function HomePage(){
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      
-       <NavBar /> 
        <Hero />
        <Services />
        <CarouselFade />

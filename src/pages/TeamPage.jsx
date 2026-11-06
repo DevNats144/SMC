@@ -11,7 +11,6 @@ import PIEduardo from "../assets/PIEduardo.jpeg";
 import PILaurindo from "../assets/PILaurindo.jpeg";
 import PIMaurooo from "../assets/PIMaurooo.jpeg";
 import PIJéssica from "../assets/PiJéssica.jpeg";
-import PIMaria from "../assets/PIMaria.jpeg";
 import PINats from "../assets/PINats.jpeg";
 import PIDeniusa from "../assets/PIDeniusa.jpeg";
 
@@ -22,7 +21,6 @@ const teamMembers = [
   { name: "Jéssica Herbelinda", role: "Host", image: PIJéssica },
   { name: "Deniusa", role: "Host", image: PIDeniusa },
   { name: "Nataniel Gomes", role: "Desenvolvedor de Software", image: PINats },
-  { name: "Maria", role: "Direção Criativa", image: PIMaria }
 ];
 
 function TeamPage() {

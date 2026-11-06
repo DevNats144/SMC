@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav'
 import { Navbar } from 'react-bootstrap';
 import { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import logo from '../assets/SociaIimg1.jpg';
 
 
@@ -10,12 +10,36 @@ function NavBar(){
 
   const [isOpen, setIsOpen] = useState(false);
   const navbarRef = useRef(null);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // Função para fechar o menu
   const closeMenu = () => setIsOpen(false);
 
+  const navigateToSection = (sectionId) => {
+    closeMenu();
+
+    if (location.pathname === '/' && location.hash === `#${sectionId}`) {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
+
+    navigate(`/#${sectionId}`);
+  };
+
   // Função para alternar o menu
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    const sectionId = decodeURIComponent(location.hash.slice(1));
+    if (!sectionId) return undefined;
+
+    const frameId = requestAnimationFrame(() => {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    return () => cancelAnimationFrame(frameId);
+  }, [location.hash, location.pathname]);
 
   // Detectar cliques fora do menu
   useEffect(() => {
@@ -39,7 +63,7 @@ function NavBar(){
 
   return( 
 
-  <div id="home" className="navbar-container" ref={navbarRef}>
+  <div className="navbar-container" ref={navbarRef}>
   <Navbar  className="navbar" variant="dark" expand="lg" fixed="top" expanded={isOpen}>
          
           <Container>
@@ -53,14 +77,14 @@ function NavBar(){
                 Social Midea Company
                 
               </Navbar.Brand>
-              <Navbar.Toggle aria-controls='basic-navbar-nav' onClick={toggleMenu} />
+              <Navbar.Toggle aria-controls='navbar-nav' onClick={toggleMenu} />
               
               <Navbar.Collapse id="navbar-nav">
                   <Nav className='ms-auto'>
-                  <Nav.Link as={Link} to='/#home' onClick={closeMenu}>Início</Nav.Link>  
-                  <Nav.Link as={Link} to='/#servicos' onClick={closeMenu}>Serviços</Nav.Link> 
+                  <Nav.Link href='/#hero' onClick={(event) => { event.preventDefault(); navigateToSection('hero'); }}>Início</Nav.Link>  
+                  <Nav.Link href='/#servicos' onClick={(event) => { event.preventDefault(); navigateToSection('servicos'); }}>Serviços</Nav.Link> 
                   <Nav.Link as={Link} to='/equipa' onClick={closeMenu}>Equipa</Nav.Link> 
-                  <Nav.Link as={Link} to='/#contacto' onClick={closeMenu}>Contacto</Nav.Link>  
+                  <Nav.Link href='/#contacto' onClick={(event) => { event.preventDefault(); navigateToSection('contacto'); }}>Contacto</Nav.Link>  
                   </Nav>    
               </Navbar.Collapse>
           </Container>

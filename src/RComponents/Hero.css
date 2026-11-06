@@ -52,4 +52,14 @@
   font-weight: bold;
 }
 
+@media (max-width: 728px) {
+  .hero {
+    min-height: 88svh;
+  }
+
+  .hero .smc-custom-toggle {
+    margin-top: 28rem;
+  }
+}
+
 
