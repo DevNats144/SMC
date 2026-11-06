@@ -18,15 +18,17 @@ html, body {
 
 /*Nav Bar Section*/
 .navbar {
-  background-color: #000000f4 !important;
-  height:75px;
+  background-color: rgba(237, 244, 249, 0.97) !important;
+  height:68px;
   margin-top: 0px;
   margin-bottom: 100px;
+  box-shadow: 0 6px 20px rgba(4, 24, 55, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .navbar .navbar-brand,
 .navbar .nav-link {
-  color: #ffffff !important;
+  color: #1a1717 !important;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
 
@@ -44,8 +46,8 @@ html, body {
    
 }
 .navbar .nav-link:hover {
-  color: #3942c1 !important;   
-transform: translateX(-3px)
+  color: #5caff8 !important;
+  transform: translateX(-3px)
 }
 
 .navbar .navbar-logo {
@@ -62,7 +64,7 @@ transform: translateX(-3px)
 }
 
 .navbar .nav-link:hover {
-  color: #3e38b3 !important;
+  color: #8bc8ff !important;
 }
 
 /* Toggle Button Styles */

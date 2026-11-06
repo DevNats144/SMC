@@ -1,20 +1,24 @@
-import Container from "react-bootstrap/Container";
+import heroVideo from "../assets/Introduzindo a SMC.mp4";
 import "./Hero.css";
 import CustomToggle from "./CustomToggle";
 
 function Hero() {
   return (
     <div className="hero" id="hero">
+      <video
+        className="hero-video"
+        autoPlay
+        loop
+        muted
+        playsInline
+        aria-hidden="true"
+      >
+        <source src={heroVideo} type="video/mp4" />
+      </video>
       <div className="overlay">
         <div className="text-center text-white d-flex flex-column justify-content-center  h-100 ">
 
-          <h1 className="fw-bold display-4">
-            Social Midea Company<br />
-          </h1>
-
-          <p className="mt-3 lead">
-            Seja bem-vindo à Social Midea Company, a sua parceira de confiança em marketing e promoção
-          </p>
+        
 
           <CustomToggle title="Sobre nòs">
             <div className="about-content" id="content">
