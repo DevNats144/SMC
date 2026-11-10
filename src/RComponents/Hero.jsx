@@ -20,24 +20,21 @@ function Hero() {
 
         
 
-          <CustomToggle title="Sobre nòs">
+          <CustomToggle title="Sobre nós">
             <div className="about-content" id="content">
-              <p style={{fontWeight: "bold"}}>
+              <p>
                 A Social Midea Company é uma agência criativa especializada em marketing digital, gestão de
                 redes sociais e design gráfico. Transformamos ideias em marcas fortes, conectando
                 empresas ao seu público com estratégias modernas e conteúdo de alto impacto.
               </p>
 
-         <br />
-
-              <div className="about-item bg-blue-300 ">
+              <div className="about-item">
                 <strong>Valores</strong>
                 <p>
                   Criatividade, inovação, profissionalismo e transparência. Comprometemo-nos com resultados
                   e foco no cliente em todas as etapas do trabalho.
                 </p>
               </div>
-    <hr />
               <div className="about-item">
                 <strong>Missão</strong>
                 <p>
@@ -45,7 +42,6 @@ function Hero() {
                   visibilidade e impacto mensurável.
                 </p>
               </div>
-   <hr />
               <div className="about-item">
                 <strong>Visão</strong>
                 <p>

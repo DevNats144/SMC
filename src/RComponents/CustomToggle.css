@@ -3,15 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 8rem;
-}
-
-.smc-custom-toggle p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 18px !important;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .smc-toggle-btn {
@@ -54,7 +46,7 @@
 }
 
 .smc-toggle-panel {
-  width: min(90%, 760px);
+  width: min(100%, 860px);
   max-height: 0;
   overflow: hidden;
   transition: max-height 460ms cubic-bezier(0.22, 1, 0.36, 1), margin-top 460ms cubic-bezier(0.22, 1, 0.36, 1), opacity 320ms ease;
@@ -63,60 +55,156 @@
 }
 
 .smc-toggle-panel.open {
-  margin: 0.9rem auto 0 auto;
+  margin: 1rem auto 0;
   max-height: 2000px;
   opacity: 1;
 }
 
 .smc-toggle-panel-inner {
-  padding: 1.1rem 1.25rem;
-  background: linear-gradient(135deg, #ffffff 0%, #f7f8fb 100%);
-  color: #1f2937;
-  border-radius: 20px;
-  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background: rgba(248, 250, 249, 0.72);
+  color: #202a35;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 16px;
+  box-shadow: 0 22px 60px rgba(7, 12, 20, 0.28);
+  backdrop-filter: blur(22px) saturate(1.3);
+  -webkit-backdrop-filter: blur(22px) saturate(1.3);
 }
 
-#about-panel-root {
+.smc-toggle-panel-heading {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(40, 54, 60, 0.16);
+}
+
+.smc-toggle-panel-heading h2 {
+  margin: 0;
+  color: #202a35;
+  font-size: clamp(1.25rem, 3vw, 1.65rem);
+  line-height: 1.2;
+}
+
+.smc-toggle-close {
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  width: 100%;
+  gap: 0.4rem;
+  flex: 0 0 auto;
+  min-height: 42px;
+  padding: 0.45rem 0.75rem;
+  color: #202a35;
+  background: rgba(255, 255, 255, 0.64);
+  border: 1px solid rgba(40, 54, 60, 0.16);
+  border-radius: 8px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: background 160ms ease, border-color 160ms ease;
 }
 
-/* Deprecated portal styles */
-.smc-toggle-panel-portal {
-  display: none;
+.smc-toggle-close:hover {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(40, 54, 60, 0.3);
 }
 
-.smc-portal-inner {
-  display: none;
+.smc-toggle-close span:first-child {
+  font-size: 1.25rem;
+  line-height: 1;
 }
 
 /* About content inside the panel */
 .about-content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
   text-align: left;
-  color: #1f2937;
+  color: #202a35;
 }
 
-.about-content p {
-  margin: 0.5rem 0 1rem 0;
+.about-content > p {
+  grid-column: 1 / -1;
+  margin: 0 0 0.5rem;
   line-height: 1.7;
-  font-size: 16px;
-  color: #374151;
+  font-size: 1rem;
+  color: #39434c;
 }
 
 .about-item {
-  margin-top: 0.9rem;
-  padding: 0.9rem 1rem;
-  background: rgba(255,255,255,0.65);
-  border-left: 3px solid #3942c1;
+  padding: 1.1rem;
+  background: rgba(255, 255, 255, 0.54);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-top: 3px solid #cf6947;
   border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(32, 42, 53, 0.06);
+  backdrop-filter: blur(8px);
 }
 
 .about-item strong {
   display: block;
   font-weight: 700;
-  color: #111827;
+  color: #202a35;
   margin-bottom: 0.35rem;
-  font-size: 16.2px;
-  letter-spacing: 0.01em;
+  font-size: 1rem;
+}
+
+.smc-toggle-panel .about-item p {
+  margin: 0;
+  color: #535e67;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+  .smc-toggle-panel {
+    width: 100%;
+  }
+
+  .about-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .about-content > p {
+    margin-bottom: 0.25rem;
+  }
+
+  .about-item:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 520px) {
+  .smc-toggle-panel-inner {
+    padding: 1rem;
+    border-radius: 13px;
+  }
+
+  .smc-toggle-panel-heading {
+    gap: 0.5rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .smc-toggle-close {
+    min-height: 40px;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .about-item:last-child {
+    grid-column: auto;
+  }
+
+  .about-item {
+    padding: 0.9rem;
+  }
 }

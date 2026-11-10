@@ -24,17 +24,6 @@
 }
 
 
-.hero p {
-  font-size: 18px !important;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #ffffff;
-  max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
-}
-
-
 .overlay {
   position: absolute;
   inset: 0;
@@ -52,13 +41,13 @@
   font-weight: bold;
 }
 
-@media (max-width: 728px) {
+@media (max-width: 768px) {
   .hero {
-    min-height: 88svh;
+    min-height: 82svh;
   }
 
   .hero .smc-custom-toggle {
-    margin-top: 37rem;
+    margin-top: 34rem;
   }
 }
 

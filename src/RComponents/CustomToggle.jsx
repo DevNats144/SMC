@@ -1,19 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { createPortal } from "react-dom";
 import "./CustomToggle.css";
 
-function CustomToggle({ title = "Sobre nòs", children }) {
+function CustomToggle({ title = "Sobre nós", children }) {
   const [open, setOpen] = useState(false);
-  const [portalRoot, setPortalRoot] = useState(null);
   const contentRef = useRef(null);
-
-  useEffect(() => {
-    const root = document.getElementById("about-panel-root");
-    if (!root) return;
-
-    const handle = requestAnimationFrame(() => setPortalRoot(root));
-    return () => cancelAnimationFrame(handle);
-  }, []);
+  const triggerRef = useRef(null);
 
   useEffect(() => {
     if (!open) return;
@@ -40,13 +31,31 @@ function CustomToggle({ title = "Sobre nòs", children }) {
       role="region"
       aria-hidden={!open}
     >
-      <div className="smc-toggle-panel-inner">{children}</div>
+      <div className="smc-toggle-panel-inner">
+        <div className="smc-toggle-panel-heading">
+          <h2>{title}</h2>
+          <button
+            className="smc-toggle-close"
+            onClick={() => {
+              setOpen(false);
+              triggerRef.current?.focus();
+            }}
+            type="button"
+            aria-label={`Fechar painel: ${title}`}
+          >
+            <span aria-hidden="true">&times;</span>
+            <span>Fechar</span>
+          </button>
+        </div>
+        {children}
+      </div>
     </div>
   );
 
   return (
     <div className="smc-custom-toggle">
       <button
+        ref={triggerRef}
         className="smc-toggle-btn"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
@@ -57,7 +66,7 @@ function CustomToggle({ title = "Sobre nòs", children }) {
         <span className={`smc-toggle-icon ${open ? "open" : ""}`}></span>
       </button>
 
-      {portalRoot ? createPortal(panel, portalRoot) : panel}
+      {panel}
     </div>
   );
 }
