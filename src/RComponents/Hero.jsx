@@ -1,20 +1,41 @@
+import { useEffect, useState } from "react";
 import heroVideo from "../assets/Introduzindo a SMC.mp4";
+import responsiveHeroVideo from "../assets/social-midea-intro-1080x1920.mp4";
 import "./Hero.css";
 import CustomToggle from "./CustomToggle";
 
+const responsiveBreakpoint = "(max-width: 768px)";
+
+function getHeroVideo() {
+  if (typeof window === "undefined") return heroVideo;
+  return window.matchMedia(responsiveBreakpoint).matches ? responsiveHeroVideo : heroVideo;
+}
+
 function Hero() {
+  const [activeHeroVideo, setActiveHeroVideo] = useState(getHeroVideo);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(responsiveBreakpoint);
+    const updateHeroVideo = (event) => {
+      setActiveHeroVideo(event.matches ? responsiveHeroVideo : heroVideo);
+    };
+
+    mediaQuery.addEventListener("change", updateHeroVideo);
+    return () => mediaQuery.removeEventListener("change", updateHeroVideo);
+  }, []);
+
   return (
     <div className="hero" id="hero">
       <video
+        key={activeHeroVideo}
         className="hero-video"
+        src={activeHeroVideo}
         autoPlay
         loop
         muted
         playsInline
         aria-hidden="true"
-      >
-        <source src={heroVideo} type="video/mp4" />
-      </video>
+      />
       <div className="overlay">
         <div className="text-center text-white d-flex flex-column justify-content-center  h-100 ">
 
